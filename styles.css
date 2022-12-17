@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  cursor: url(../images/cursor-blue.svg), pointer !important;
+  /* cursor: url("/media/checkbox-blank-circle-fill.svg"), pointer !important; */
 }
 body {
   height: 100vh;
@@ -88,11 +88,68 @@ body {
   margin-left: 15rem;
 }
 .wrp3 {
-  height: 100vh;
+  height: max-content;
   width: 100%;
-  background-color: #b4b4b4;
+  padding: 0 8rem;
+  padding-bottom: 10rem;
+  /* background-color: #b4b4b4;
   background: url("./media/stratis-bakasnew.jpg");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
+}
+.grp {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 0.1px solid #73737325;
+}
+.onegrp {
+  height: 17.5rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem 1rem;
+  outline: 0.1px solid #73737325;
+}
+.onegrp:hover {
+  background-color: black;
+}
+.onegrp img {
+  padding: 2rem 4rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.onegrp:hover img {
+  padding: 1rem 4rem 0;
+}
+.title {
+  padding: 1.5rem 2.5rem 0;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.onegrp:hover .title {
+  margin: 0;
+  color: white;
+}
+.show {
+  display: none;
+  /* visibility: hidden; */
+  color: #737373;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.4rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.onegrp:hover .show {
+  display: flex;
+  color: #737373;
+  margin-top: 2rem;
+  /* visibility: initial; */
 }
