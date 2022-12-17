@@ -150,6 +150,6 @@ body {
 .onegrp:hover .show {
   display: flex;
   color: #737373;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   /* visibility: initial; */
 }
