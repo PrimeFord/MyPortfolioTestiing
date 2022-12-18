@@ -173,7 +173,8 @@ body {
   align-items: center;
   font-weight: 800;
   font-size: 2.5rem;
-  top: 20%;
+  top: 25%;
+  box-shadow: 0.1rem 0.5rem 3rem 1.2rem rgba(0, 0, 0, 0.1);
 }
 .firstone::before {
   content: "";
@@ -206,7 +207,7 @@ body {
 }
 .secondone {
   /* background-color: #f1f6fa; */
-  height: 120vh;
+  height: 100vh;
   margin-right: 25rem;
   margin-left: 12rem;
   /* padding-left: 38%; */
@@ -230,16 +231,34 @@ body {
   background-color: white;
   top: 45%;
   left: 50%;
+  box-shadow: 0.1rem 0.5rem 3rem 1.2rem rgba(0, 0, 0, 0.1);
 }
 .wrp4vid video {
   height: 100%;
   width: 100%;
 }
+.bttn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+.btn {
+  color: white;
+  font-size: 1rem;
+  padding: 1.2rem 1rem;
+  border-radius: 0.3rem;
+  margin-top: 10rem;
+  /* margin-left: 50%; */
+  text-decoration: none;
+  background-color: black;
+}
+.btn:hover {
+  cursor: pointer;
+}
 footer {
   height: 80vh;
   margin: 8rem;
   animation: forwards;
-  /* transform: top ceter; */
   transition: all 1.5s ease-in-out;
   /* background-color: #737373; */
   /* display: flex; */
