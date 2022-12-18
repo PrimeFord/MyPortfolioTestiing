@@ -255,6 +255,43 @@ body {
 .btn:hover {
   cursor: pointer;
 }
+.wrp5 {
+  height: max-content;
+  width: 100%;
+  padding: 2rem 15rem;
+  color: black;
+}
+.tab {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  /* background-color: #737373; */
+  box-shadow: 0.1rem 0.5rem 3rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+.onetab {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.5rem 3.5rem;
+}
+.onetab:hover {
+  cursor: pointer;
+  background-color: #f1f6fa;
+}
+.tt {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: black;
+}
+.onetab p:nth-child(3) {
+  color: #737373;
+  margin-top: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
 footer {
   height: 80vh;
   margin: 8rem;
