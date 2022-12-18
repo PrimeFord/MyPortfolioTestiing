@@ -223,11 +223,23 @@ body {
   width: 24rem;
   line-height: 2rem;
 }
+.wrp4vid {
+  position: absolute;
+  height: 40%;
+  width: 50%;
+  background-color: white;
+  top: 45%;
+  left: 50%;
+}
+.wrp4vid video {
+  height: 100%;
+  width: 100%;
+}
 footer {
   height: 80vh;
   margin: 8rem;
-  /* animation: forwards; */
-  transform: top ceter;
+  animation: forwards;
+  /* transform: top ceter; */
   transition: all 1.5s ease-in-out;
   /* background-color: #737373; */
   /* display: flex; */
