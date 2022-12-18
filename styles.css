@@ -153,6 +153,76 @@ body {
   margin-top: 1.5rem;
   /* visibility: initial; */
 }
+.wrp4 {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  padding-top: 5rem;
+}
+.wrp4img {
+  position: absolute;
+  background: linear-gradient(0deg, #518bf085, #518bf085),
+    url(./media/winter.jpg);
+  background-repeat: no-repeat;
+  height: 40%;
+  width: 45%;
+  color: white;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+  top: 20%;
+}
+.firstone::before {
+  content: "";
+  position: absolute;
+  height: 14rem;
+  width: 2px;
+  background-color: #73737325;
+  top: -5rem;
+  right: 50%;
+  z-index: 3;
+}
+.firstone {
+  background-color: #f1f6fa;
+  height: 120vh;
+  margin-left: 15rem;
+  margin-right: 3rem;
+  padding-left: 38%;
+  padding-top: 12rem;
+}
+.firstone h4 {
+  color: black;
+  width: 24rem;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+.firstone p {
+  color: #737373;
+  width: 24rem;
+  line-height: 2rem;
+}
+.secondone {
+  /* background-color: #f1f6fa; */
+  height: 120vh;
+  margin-right: 25rem;
+  margin-left: 12rem;
+  /* padding-left: 38%; */
+  padding-top: 16rem;
+}
+.secondone h4 {
+  color: black;
+  width: 24rem;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+.secondone p {
+  color: #737373;
+  width: 24rem;
+  line-height: 2rem;
+}
 footer {
   height: 80vh;
   margin: 8rem;
