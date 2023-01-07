@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  cursor: url("/media/checkbox-blank-circle-+fill.svg"), pointer !important;
+  /* cursor: url("/media/checkbox-blank-circle-+fill.svg"), pointer !important; */
 }
 body {
   height: 100vh;
@@ -11,18 +11,93 @@ body {
   font-family: Moderat, Avenir, sans-serif;
   /* scrollbar-width: 3px; */
   /* position: relative; */
+  cursor: none;
   overflow-x: hidden;
 }
 /* .logo {
   position: absolute;
 } */
+.cursor {
+  height: 20px;
+  width: 20px;
+  border: 2px solid burlywood;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 6px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.6);
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid red;
+}
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.burst {
+  animation: cursorAnim4 0.5s forwards;
+  border: 5px solid purple;
+}
+@keyframes cursorAnim4 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
 .wrp {
 }
 .wrp1 {
   height: 100vh;
   width: 100%;
   background-color: #b4b4b4;
-  background: url("./media/stratis-bakasnew.jpg"), #b4b4b4;
+  background: url("./media/stratis-bakasnewc.jpg"), #b4b4b4;
   background-position-x: 90%;
   background-repeat: no-repeat;
   background-size: contain;
