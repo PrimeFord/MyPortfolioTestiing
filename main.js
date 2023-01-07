@@ -1,5 +1,6 @@
 //Selector
 const cursor = document.querySelector(".cursor");
+const navbar = document.querySelector(".navbar");
 
 //Event-listener
 document.addEventListener("mousemove", (e) => {
@@ -20,3 +21,5 @@ document.addEventListener("dblclick", () => {
     cursor.classList.remove("burst");
   }, 200);
 });
+
+navbar;

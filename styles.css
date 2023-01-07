@@ -90,6 +90,61 @@ body {
     transform: scale(3);
   }
 }
+.navbar {
+  background: none;
+  z-index: 1;
+  width: 95%;
+  height: 3rem;
+  padding: 0px 100px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_list {
+  height: 100%;
+}
+.nav_list ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav_list ul li {
+  margin-left: 50px;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav_list ul li:hover {
+  background-color: #ffffff80;
+}
+.nav_list ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+.scroll {
+  background-color: white;
+  top: -100px;
+  border-radius: 30px;
+  animation: fading 0.4s ease forwards;
+}
+@keyframes fading {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 20px;
+  }
+}
 
 .wrp {
 }
