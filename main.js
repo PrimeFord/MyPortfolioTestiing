@@ -3,8 +3,6 @@ const cursor = document.querySelector(".cursor");
 const navbar = document.querySelector(".navbar");
 const a = document.querySelectorAll("#a");
 
-a.style.color = "#b4b4b4";
-
 //Event-listener
 document.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.pageY - 10}px`;

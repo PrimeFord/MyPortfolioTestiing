@@ -22,6 +22,7 @@ body {
   width: 20px;
   border: 2px solid burlywood;
   border-radius: 50%;
+  z-index: 100;
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
@@ -104,9 +105,19 @@ body {
   align-items: center;
   justify-content: space-between;
   align-items: center;
+  border-radius: 30px;
+
   background-color: white;
 }
-
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
 .nav_list {
   height: 100%;
 }
@@ -129,7 +140,7 @@ body {
 .nav_list ul li a {
   font-size: 1rem;
   text-decoration: none;
-  color: white;
+  color: #737373;
   font-weight: bold;
   display: block;
 }
@@ -141,7 +152,7 @@ body {
   animation: fading 0.4s ease forwards;
 }
 .navcolor {
-  background-color: #b4b4b4;
+  background-color: rgba(222, 184, 135, 0.5);
   color: white;
   top: -100px;
   border-radius: 30px;
